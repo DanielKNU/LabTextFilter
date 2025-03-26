@@ -27,8 +27,3 @@ def test_filter_and_write(temp_files, keyword, expected_lines):
         result = f.readlines()
     assert result == expected_lines
 
-if __name__ == "__main__":
-    input_path = "input.txt"
-    output_path = "filtered.txt"
-    keyword = "world"
-    filter_and_write(input_path, output_path, keyword)

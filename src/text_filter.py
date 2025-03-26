@@ -9,3 +9,9 @@ def filter_and_write(input_path, output_path, keyword):
     filtered_lines = [line for line in lines if keyword in line]
     with open(output_path, 'w', encoding='utf-8') as file:
         file.writelines(filtered_lines)
+        
+if __name__ == "__main__":
+    input_path = "input.txt"
+    output_path = "filtered.txt"
+    keyword = "world"
+    filter_and_write(input_path, output_path, keyword)
